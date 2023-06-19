@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "general/header"}}
+</head>
+<body>
+    <!-- beginanswer -->
+    <div class="flex items-center justify-center min-h-screen bg-cover" style="background-image: url('https://lh3.googleusercontent.com/8Gw6EsuzlkxXblFTbtd3AC-eSE2cN3XGNjzFH1aa6OkUzLi9uB2OlfxGcrp95tZ0d0PZAOVUYuPBo2dtA-PaoWyt-TrDhpSOUnojp7Ua5w');">
+        <div class="w-full max-w-md px-8 py-10 mt-4 text-left bg-white shadow-lg rounded-lg">
+            <h3 class="text-2xl font-bold text-center">Register account</h3>
+            <form method="POST" action="/client/register/process">
+                <div>
+                    <div class="mt-4">
+                        <div>
+                            <label class="block" for="fullname">Fullname<label>
+                            <input type="text" placeholder="fullname" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" name="fullname">
+                        </div>
+                        <div class="mt-4">
+                            <label class="block" for="email">Email<label>
+                            <input type="email" placeholder="Email" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" name="email">
+                        </div>
+                        <div class="mt-4">
+                            <label class="block">Password<label>
+                            <input type="password" placeholder="Password" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600" name="password">
+                        </div>
+                        <div class="flex items-baseline justify-between">
+                            <button class="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Register</button>
+                            <a href="/client/login" class="text-sm text-blue-600 hover:underline">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- endanswer -->
+</body>
+</html>
